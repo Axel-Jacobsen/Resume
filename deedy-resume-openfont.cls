@@ -49,10 +49,10 @@ Last Updated on
 		\fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{40pt}{10cm}\selectfont #1 
 		\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 	} \\
-	\vspace{5pt}
+	\vspace{10pt}
 	\centering{ \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
 	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
-	\vspace{-15pt}
+	\vspace{15pt}
 }
 
 % Name command
@@ -62,10 +62,9 @@ Last Updated on
 		\fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{15pt}{10cm}\selectfont #1 
 		\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 	} \\
-	\vspace{5pt}
+	\vspace{10pt}
 	\centering{ \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
-	% \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
-	\vspace{-15pt}
+	\vspace{10pt}
 }
 
 \newcommand{\headersection}[2]{
@@ -73,9 +72,12 @@ Last Updated on
 		\begin{tabular}{ccc}
 			\sffamily
 			\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{25pt}{10cm}
-			\selectfont #1 & {\includegraphics[align=c,scale=.32]{#2}}
+			\selectfont #1 & {\includegraphics[align=b,scale=.32]{#2}}
+			\vspace{10pt}
 		\end{tabular}
 	}
+	\vspace{10pt}
+	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 }
 
 \titlespacing{\section}{0pt}{0pt}{0pt}
