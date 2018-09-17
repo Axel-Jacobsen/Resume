@@ -18,6 +18,7 @@
 \usepackage[UKenglish]{isodate}
 \usepackage{fontspec,xltxtra,xunicode}
 \usepackage{graphbox,wrapfig, mwe}
+\usepackage[T1]{fontenc}
 
 % Color definitions
 \definecolor{date}{HTML}{666666} 
@@ -71,8 +72,8 @@ Last Updated on
 	\centering{
 		\begin{tabular}{ccc}
 			\sffamily
-			\fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{25pt}{10cm}
-			\selectfont #1 & {\includegraphics[align=m,scale=.32]{#2}}
+			\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{25pt}{10cm}
+			\selectfont #1 & {\includegraphics[align=c,scale=.32]{#2}}
 		\end{tabular}
 	}
 }
