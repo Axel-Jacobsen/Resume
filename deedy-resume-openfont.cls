@@ -55,7 +55,7 @@ Last Updated on
 	\vspace{15pt}
 }
 
-% Name command
+% Name command No underline
 \newcommand{\namesectionnounderline}[3]{
 	\centering{
 		\sffamily
@@ -67,12 +67,13 @@ Last Updated on
 	\vspace{10pt}
 }
 
+% Coop header
 \newcommand{\headersection}[2]{
 	\centering{
 		\begin{tabular}{ccc}
 			\sffamily
 			\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{25pt}{10cm}
-			\selectfont #1 & {\includegraphics[align=b,scale=.32]{#2}}
+			\selectfont #1 & {\includegraphics[align=b,scale=.80]{#2}}
 			\vspace{10pt}
 		\end{tabular}
 	}
