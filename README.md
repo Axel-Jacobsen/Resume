@@ -1,1 +1,1 @@
-![Resume](AxelJacobsen.png)
+![Resume](TechnicalResume.png)
