@@ -20,32 +20,6 @@
 % operating system or comment the line out to use the default font.
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% TODO:
-% 1. Integrate biber/bibtex for article citation under publications.
-% 2. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add styling information for a "Projects/Hacks" section.
-% 4. Add location/address information
-% 5. Merge OpenFont and MacFonts as a single sty with options.
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% CHANGELOG:
-% v1.1:
-% 1. Fixed several compilation bugs with \renewcommand
-% 2. Got Open-source fonts (Windows/Linux support)
-% 3. Added Last Updated
-% 4. Move Title styling into .sty
-% 5. Commented .sty file.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the
-% vertical limit
-% 2. Hacky space on the first bullet point on the second column.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % !TEX program = xelatex
 
@@ -54,7 +28,7 @@
 
 \begin{document}
 
-\headersection{Axel Jacobsen}{header1.png}
+\headersection{Axel Jacobsen}{header.png}
 
 \section{Experience}
 
@@ -79,7 +53,7 @@
 \runsubsection{Robot Competition}
 \descript{| Engineering Physics \hfill \small{May 2018 – August 2018}}
 \begin{tightemize}
-	\item Designed and built a robot to autonomously retrieve yarn Ewoks
+	\item Designed and built a robot to autonomously retrieve yarn Ewoks which used \\a neural network to locate them.
 	\item Developed electronics, IR detection system, and wrote software \\for the embedded control system. See Github for website and further information
 \end{tightemize}
 \sectionsep

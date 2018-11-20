@@ -46,10 +46,10 @@ Last Updated on
 \newcommand{\namesection}[3]{
 	\centering{
 		\sffamily
-		\fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{40pt}{10cm}\selectfont #1 
+		\fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{35pt}{10cm}\selectfont #1 
 		\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 	} \\
-	\vspace{15pt}
+	\vspace{10pt}
 	\centering{ \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
 	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 	\vspace{15pt}
@@ -77,7 +77,6 @@ Last Updated on
 			\vspace{10pt}
 		\end{tabular}
 	}
-	\vspace{10pt}
 	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 }
 
