@@ -9,7 +9,7 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[hmargin=1.25cm, vmargin=.5cm]{geometry}
+\usepackage[hmargin=1.25cm, vmargin=.6cm]{geometry}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
@@ -19,6 +19,7 @@
 \usepackage{fontspec,xltxtra,xunicode}
 \usepackage{graphbox,wrapfig, mwe}
 \usepackage[T1]{fontenc}
+\usepackage{multirow}
 
 % Color definitions
 \definecolor{date}{HTML}{666666} 
@@ -31,28 +32,19 @@
 \setmainfont[Color=primary, Path = fonts/lato/]{Lato-Lig}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
 \newcommand{\custombold}[1]{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #1 \normalfont}
+\newcommand{\customit}[1]{\fontspec[Path = fonts/lato/]{Lato-LigIta}\selectfont #1 \normalfont}
 
-% Date command
-\setlength{\TPHorizModule}{1mm}
-\setlength{\TPVertModule}{1mm}
-\textblockorigin{0mm}{5mm} % start everyth
-\newcommand{\lastupdated}{\begin{textblock}{60}(165,0)
-\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
-Last Updated on
-\today
-\end{textblock}}
 
 % Name command
 \newcommand{\namesection}[3]{
 	\centering{
 		\sffamily
-		\fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{30pt}{10cm}\selectfont #1 
+		\fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{25pt}{25pt}\selectfont #1 
 		\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 	} \\
 	\vspace{10pt}
 	\centering{ \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
 	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
-	\vspace{10pt}
 }
 
 % Name command No underline
@@ -70,12 +62,13 @@ Last Updated on
 % Coop header
 \newcommand{\headersection}[2]{
 	\centering{
-		\begin{tabular}{ccc}
-			\sffamily
-			\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{25pt}{10cm}
-			\selectfont #1 & {\includegraphics[align=b,scale=.80]{#2}}
-			\vspace{10pt}
-		\end{tabular}
+		\begin{tabular}{cc}
+			{\sffamily
+			\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{23pt}{23pt}
+			 {\selectfont #1} } & \multirow{-2.2}{*}{{\includegraphics[align=b,scale=.70]{#2}}} \\
+			 {{\href{mailto:axelnjacoben@gmail.com}{axelnjacoben@gmail.com} | 778.789.4810}}
+			 \vspace{10pt}
+			\end{tabular}
 	}
 	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 }
@@ -84,7 +77,7 @@ Last Updated on
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{20pt}\selectfont \raggedright\uppercase}{} {0em}{}
+\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{13pt}{15pt}\selectfont \raggedright\uppercase}{} {0em}{}
 
 % Subeadings command
 \titleformat{\subsection}{\color{subheadings}
@@ -92,16 +85,10 @@ Last Updated on
 \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
 \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
 \newcommand{\runsubsection}[1]{\color{subheadings}
-\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{9pt}{9pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
 % Descriptors command
-\newcommand{\descript}[1]{\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
-
-% Location command
-\newcommand{\location}[1]{\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
-
-% Section seperators command
-\newcommand{\sectionsep}[0]{\vspace{8pt}}
+\newcommand{\descript}[1]{\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{11pt}\selectfont {#1 \\} \normalfont\vspace{5pt}}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
