@@ -66,7 +66,7 @@
 			{\sffamily
 			\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{23pt}{23pt}
 			 {\selectfont #1} } & \multirow{-2.2}{*}{{\includegraphics[align=b,scale=.70]{#2}}} \\
-			 {{\href{mailto:axelnjacoben@gmail.com}{axelnjacoben@gmail.com} | 778.789.4810}}
+			 {{\href{mailto:axelnjacobsen@gmail.com}{axelnjacobsen@gmail.com} | 778.789.4810}}
 			 \vspace{10pt}
 			\end{tabular}
 	}
