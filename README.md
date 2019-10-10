@@ -1,1 +1,1 @@
-![Resume](TechnicalResume.png)
+
