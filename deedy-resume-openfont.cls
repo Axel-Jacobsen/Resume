@@ -77,19 +77,20 @@
 \titlespacing{\section}{0pt}{0pt}{0pt}
 
 % Headings command
-\titleformat{\section}{\color{headings}
-\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{13pt}{13pt}\selectfont \raggedright\uppercase}{} {0em}{}
+\titleformat{\section}{\color{subheadings}
+\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{14pt}{14pt}\selectfont \raggedright\uppercase}{} {0em}{}
 
 % Subeadings command
-\titleformat{\subsection}{\color{subheadings}
-\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
+\titleformat{\subsection}{\color{headings}
+\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{10pt}{10pt}\selectfont\bfseries\uppercase}{}{0em}{}
 \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
 \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
+
 \newcommand{\runsubsection}[1]{\color{subheadings}
 \fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{10pt}{10pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
 % Descriptors command
-\newcommand{\descript}[1]{\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{11pt}\selectfont {#1 \\} \normalfont\vspace{5pt}}
+\newcommand{\descript}[1]{\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Regular}\fontsize{11pt}{11pt}\selectfont {#1 \\} \normalfont\vspace{5pt}}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep2pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
