@@ -92,4 +92,4 @@
 \newcommand{\descript}[1]{\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{11pt}\selectfont {#1 \\} \normalfont\vspace{5pt}}
 
 % Bullet Lists with fewer gaps command
-\newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\fontsize{21pt}{21pt}\itemsep3pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
+\newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep2pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
