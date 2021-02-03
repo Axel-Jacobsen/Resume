@@ -1,3 +1,7 @@
 */__latexindent_temp*
 *.gz
 *.synctex(busy)
+*.log
+*.toc
+*.out
+*.aux
