@@ -4,4 +4,5 @@ build:
 
 .PHONY: clean
 clean:
-	@rm *.aux *.log *.out *.toc
+	@ # -f so rm doesn't report missing files
+	@rm -f *.aux *.log *.out *.toc
