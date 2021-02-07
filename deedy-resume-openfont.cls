@@ -31,7 +31,7 @@
 % Set main fonts
 \defaultfontfeatures{Ligatures=TeX}
 \setmainfont[Color=primary, Path = fonts/lato/]{Lato-Lig}
-\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
+\setsansfont[Scale=MatchLowercase,Ligatures=TeX,Path = fonts/raleway/]{Raleway-ExtraLight}
 \newcommand{\custombold}[1]{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #1 \normalfont}
 \newcommand{\customit}[1]{\fontspec[Path = fonts/lato/]{Lato-LigIta}\selectfont #1 \normalfont}
 
