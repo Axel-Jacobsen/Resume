@@ -48,20 +48,6 @@
 	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 }
 
-% Coop header
-\newcommand{\headersection}[2]{
-	\centering{
-		\begin{tabular}{cc}
-			{\sffamily
-			\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{23pt}{23pt}
-			 {\selectfont #1} } & \multirow{-2.2}{*}{{\includegraphics[align=b,scale=.70]{#2}}} \\
-			 {{\href{mailto:axelnjacobsen@gmail.com}{axelnjacobsen@gmail.com} | 778.789.4810}}
-			 \vspace{10pt}
-			\end{tabular}
-	}
-	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
-}
-
 \titlespacing{\section}{0pt}{0pt}{0pt}
 
 % Headings command
