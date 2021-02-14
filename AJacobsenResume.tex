@@ -16,7 +16,7 @@
 \namesection{}{Axel Jacobsen}{\href{https://axel-jacobsen.github.io}{axel-jacobsen.github.io} | \href{https://linkedin.com/in/Axel-Jacobsen}{linkedin.com/in/Axel-Jacobsen} \\ \href{mailto:axelnjacobsen@gmail.com}{axelnjacobsen@gmail.com}}
 
 \begin{minipage}[t]{\textwidth}
-	\runsubsection{Programming} Strong with Python, experienced in C/C++, Java, MATLAB \\
+	\runsubsection{Programming} Python 5 years, C/C++ 2 years, Java/MATLAB 1 year\\
 	\runsubsection{Electrical / Mechanical} Experience with PCB design, mechanical prototyping and CAD software, fluid system design \\
 	\runsubsection{Other} Have EU passport (Citizen of Denmark, Canada)
 \end{minipage}
@@ -29,7 +29,7 @@
 \descript{| Chan-Zuckerberg Biohub | \small{Jun 2020 - Dec 2020}}
 \customit{Reprogrammed the \href{https://opentrons.com/ot-2/}{Opentrons OT-2}, an open-source pipetting robot for lab automation}
 \begin{tightemize}
-    \item Rewrote almost all software for the robot with a focus on speeding up epithelial cell growth protocols - new code base size is \char`\~ 25\% of the original, with at least doubling of efficiency for frequent operations
+    \item Rewrote OT-2 code base with a focus on speeding up epithelial cell growth protocols - reduced code base size by \char`\~ 75\%, doubled speed of certain frequent operations
     \item Redesigned computing architecture so arbitrary instruments (e.g. cell counters) can be used during protocols instead of just the Opentrons instruments
 \end{tightemize}
 
@@ -39,8 +39,8 @@
 \descript{| Wildlife Computers | \small{May 2019 – Aug 2019} }
 \customit{Wildlife Computers is the leading provider of advanced wildlife telemetry solutions}
 \begin{tightemize}
-    \item Wrote C++ firmware to test PCBs that arrive from fabrication - autonomously confirms correct placement of components which allows for identification of faulty boards, improving production throughput
-    \item Designed a digital isolator PCB to isolate the company's hardware from measurement devices, allowing for low-noise and accurate voltage measurements
+    \item Wrote C++ to test PCBs that arrive from fabrication - autonomously verifies PCB component placmeent to increase production throughput
+    \item Designed an isolator PCB to isolate digital lines from sensitive measurement devices, allowing low-noise and accurate voltage measurements
 \end{tightemize}
 
 \vspace{8pt}
@@ -50,7 +50,7 @@
 \customit{Control Mobile aggregated and displayed transaction data for over 100 companies that used Stripe/Square/Paypal}
 \begin{tightemize}
     \item Wrote Python scripts to analyze and rank order over 300 individual SQL queries by their runtime to optimize the SQL database; reduced the runtime to fetch and display customer data by 65\%
-    \item Worked with the agile backend team to fix existing bugs, write new code, and to refactor current code
+    \item Worked with the backend team to fix existing bugs, write new code, and refactor current code
 \end{tightemize}
 
 \vspace{12pt}
@@ -58,20 +58,20 @@
 
 \section{Projects}
 
-\runsubsection{Various Deep Learning Projects}
+\runsubsection{Deep Learning}
 \begin{tightemize}
-    \item Asynchronous Advantage Actor-Critic Model, reinforcement learning project optimized for CPU with multiprocessing
-    \item Deep Q-Network in PyTorch to play Atari's Pong, trained on Denmark Technical University's High Performance Computing Cluster
+    \item Asynchronous Advantage Actor-Critic Model written in Pytorch, optimized for multicore CPUs via multiprocessing
+    \item LSTM-based Deep Q-Network, trained on Denmark Technical University's High-Performance Computing Cluster
     \item Feed-forward neural net written with Numpy solves MNIST with 97.2\% accuracy, vectorized for fast training
 \end{tightemize}
 
 \vspace{8pt}
 
-\runsubsection{Autonomous Robot Competition}
+\runsubsection{16-Week Autonomous Robot Competition}
 \descript{| Engineering Physics\hfill}
 \begin{tightemize}
     \item Deployed a real-time object detection algorithm on Raspberry Pi
-    \item Created signal processing software to quickly and accurately detect certain IR signals
+    \item Created signal processing software to detect IR signals with sub-millisecond detection time
     \item Wrote C controls software and created circuits to control the mechanical subsystems
 \end{tightemize}
 
@@ -94,9 +94,9 @@
 \begin{adjustwidth}{0.55cm}{1.25cm}
 	\custombold{Exchange Semester} \\
 	\customit{Coursework includes} Operating Systems, Deep Learning, Robotics, Computationally Hard Problems. \\
-	Won the DTU OS Challenge for writing the fastest reverse hash server in C, using multiprocessing and multithreading 
+	Won the DTU OS Challenge for writing the fastest reverse hash server in C, using both multiprocessing and multithreading 
 \end{adjustwidth}
 
 \vspace{10pt}
 
-\end{document}  \documentclass[]{article}
+\end{document}
