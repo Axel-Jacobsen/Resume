@@ -16,7 +16,7 @@
 \namesection{}{Axel Jacobsen}{\href{https://axel-jacobsen.github.io}{axel-jacobsen.github.io} | \href{https://linkedin.com/in/Axel-Jacobsen}{linkedin.com/in/Axel-Jacobsen} \\ \href{mailto:axelnjacobsen@gmail.com}{axelnjacobsen@gmail.com}}
 
 \begin{minipage}[t]{\textwidth}
-	\runsubsection{Programming} Advanced in Python, experienced in C, Javascript, learning Julia, Lisp, Rust\\
+	\runsubsection{Programming} Advanced in Python, experienced in C/C++, Java, Javascript, learning Julia, Lisp, Rust\\
   \runsubsection{Electromechanical} Experience with robotics, PCB design, mechanical prototyping and Onshape/Solidworks
 \end{minipage}
 
@@ -24,30 +24,29 @@
 
 \section{Relevant Experience}
 
-\runsubsection{R\&D Engineering Intern}
-\descript{| Chan-Zuckerberg Biohub | \small{Jun 2020 - Dec 2020, Jul 2021 - Present}}
-\customit{Owner of the Biohub's reprogramming project of the \href{https://opentrons.com/ot-2/}{Opentrons OT-2}, an open-source pipetting robot for lab automation}
+\runsubsection{Chan-Zuckerberg Biohub}
+\descript{| R\&D Engineering Intern | \small{Jun 2020 - Dec 2020, Jul 2021 - Present}}
 \begin{tightemize}
-    \item Wrote code base with a focus on simplicity, reliability, and speed - current code base has doubled the speed of certain frequent operations, with a reduction of the codebase size by \char`\~ 75\% while expanding the capabilities of the robot
+    \item Owner of the Biohub's reprogramming project of the \href{https://opentrons.com/ot-2/}{Opentrons OT-2}, an open-source pipetting robot
+    \item Wrote code base with a focus on simplicity, reliability, and speed
+    \item Doubled the speed of certain frequent operations (e.g. picking up / dropping pipette tips), with a reduction of the codebase size by \char`\~ 75\%
     \item Designed and implemented architecture so any software-controlled instrument can be used during protocols (e.g. cameras, GPUs, thermocyclers)
     \item Designed and implemented tests to measure the accuracy of the OT-2 using cross-correlation techniques, accurate to the µm range over the robot's movement range of \char`\~ 1 meter
 \end{tightemize}
 
 \vspace{8pt}
 
-\runsubsection{Engineering Intern}
-\descript{| Wildlife Computers | \small{May 2019 – Aug 2019} }
-\customit{Wildlife Computers is the leading provider of advanced wildlife telemetry solutions}
+\runsubsection{Wildlife Computers}
+\descript{| Engineering Intern | \small{May 2019 – Aug 2019} }
 \begin{tightemize}
     \item Designed an isolator PCB to isolate digital lines from sensitive measurement devices, allowing low-noise and accurate voltage measurements
-    \item Wrote C++ to test PCBs that arrive from fabrication - autonomously verifies PCB component placment to increase production throughput
+    \item Wrote C++ to test PCBs that arrive from fabrication - autonomously verifies PCB component placement to increase production throughput
 \end{tightemize}
 
 \vspace{8pt}
 
-\runsubsection{Data Science Co-op}
-\descript{| Control Mobile | \small{Jan 2018 – Apr 2018} }
-\customit{Control Mobile aggregated and displayed transaction data for over 100 companies that used Stripe/Square/Paypal}
+\runsubsection{Control Mobile}
+\descript{| Data Science Co-op | \small{Jan 2018 – Apr 2018} }
 \begin{tightemize}
     \item Wrote Python scripts to analyze and rank order over 300 individual SQL queries by their runtime to optimize the SQL database; reduced the runtime to fetch and display customer data by 65\%
     \item Worked with the backend team to fix existing bugs, write new code, and refactor current code
@@ -62,17 +61,18 @@
 \begin{tightemize}
     \item Asynchronous Advantage Actor-Critic Model written in Pytorch, optimized for multicore CPUs via multiprocessing
     \item LSTM-based Deep Q-Network, trained on Denmark Technical University's High-Performance Computing Cluster
-    \item Feed-forward neural net written with Numpy solves MNIST with 97.2\% accuracy, vectorized for fast training
+    \item Feed-forward neural network written from scratch, implementing the math behind deep learning
+    \item Currently writing a basic autograd library in Julia, in order to understand fundamentals of Pytorch
 \end{tightemize}
 
 \vspace{8pt}
 
-\runsubsection{16-Week Autonomous Robot Competition}
-\descript{| Engineering Physics\hfill}
+\runsubsection{Engineering Physics Autonomous Robot Competition}
 \begin{tightemize}
-    \item Deployed a real-time object detection algorithm on Raspberry Pi
-    \item Created signal processing software to detect IR signals with sub-millisecond detection time
-    \item Wrote C controls software and created circuits to control the mechanical subsystems
+    \item Designed and created an autonomous robot from scratch in 8 weeks, capable of navigating complex and dynamic course
+    \item Implemented signal processing software to detect specific IR frequencies with sub-millisecond detection time
+    \item Designed and created circuits to control the mechanical subsystems (robotic arm / claw, basket)
+    \item Wrote (in C) driver software for the robotic arm / claw, as well as software for high-level control loops
 \end{tightemize}
 
 \vspace{12pt}
