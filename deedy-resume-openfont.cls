@@ -30,18 +30,18 @@
 
 % Set main fonts
 \defaultfontfeatures{Ligatures=TeX}
-\setmainfont[Color=primary, Path = fonts/lato/]{Lato-Lig}
+\setmainfont[Color=primary, Path = fonts/lato/]{Lato-Light}
 \setsansfont[Scale=MatchLowercase,Ligatures=TeX,Path = fonts/raleway/]{Raleway-ExtraLight}
-\newcommand{\custombold}[1]{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #1 \normalfont}
-\newcommand{\customit}[1]{\fontspec[Path = fonts/lato/]{Lato-LigIta}\selectfont #1 \normalfont}
+\newcommand{\custombold}[1]{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Regular}\selectfont #1 \normalfont}
+\newcommand{\customit}[1]{\fontspec[Path = fonts/lato/]{Lato-LightItalic}\selectfont #1 \normalfont}
 
 
 % Name command
 \newcommand{\namesection}[3]{
 	\centering{
 		\sffamily
-		\fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{25pt}{25pt}\selectfont #1 
-		\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
+		\fontspec[Path = fonts/lato/]{Lato-Thin}\fontsize{25pt}{25pt}\selectfont #1 
+		\fontspec[Path = fonts/lato/]{Lato-Light}\selectfont #2
 	} \\
 	\vspace{8pt}
 	\centering{ \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
@@ -52,16 +52,16 @@
 
 % Headings command
 \titleformat{\section}{\color{subheadings}
-\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{14pt}{14pt}\selectfont \raggedright\uppercase}{} {0em}{}
+\scshape\fontspec[Path = fonts/lato/]{Lato-Light}\fontsize{14pt}{14pt}\selectfont \raggedright\uppercase}{} {0em}{}
 
 % Subeadings command
 \titleformat{\subsection}{\color{headings}
-\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{10pt}{10pt}\selectfont\bfseries\uppercase}{}{0em}{}
+\fontspec[Path = fonts/lato/]{Lato-Bold}\fontsize{10pt}{10pt}\selectfont\bfseries\uppercase}{}{0em}{}
 \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
 \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
 
 \newcommand{\runsubsection}[1]{\color{subheadings}
-\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{10pt}{10pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+\fontspec[Path = fonts/lato/]{Lato-Bold}\fontsize{10pt}{10pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Regular}\fontsize{11pt}{11pt}\selectfont {#1 \\} \normalfont\vspace{5pt}}
