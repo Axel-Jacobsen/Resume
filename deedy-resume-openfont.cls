@@ -16,6 +16,7 @@
 \usepackage[absolute]{textpos}
 \usepackage[UKenglish]{babel}
 \usepackage[UKenglish]{isodate}
+\usepackage{etoolbox}
 \usepackage{fontspec}
 \usepackage{graphbox,wrapfig, mwe}
 \usepackage[T1]{fontenc}
