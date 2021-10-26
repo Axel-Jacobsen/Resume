@@ -37,10 +37,13 @@
 \descript{| R\&D Engineering Intern | \small{Jun 2020 - Dec 2020, Jul 2021 - Present}}
 \begin{tightemize}
     \item Rewrote codebase of the \href{https://opentrons.com/ot-2/}{Opentrons OT-2}, an open-source pipetting robot
+    \ifdef{\software} {
+      \item Implemented Python's Type Hints with MyPy, speeding up development an increasing reliability of codebase
+    } {}
     \item Doubled the speed of certain frequent operations (e.g. picking up / dropping pipette tips)
+    \item Created tests, accurate to 1 µm over \char`\~ 1 m, to measure drift of OT-2 using cross-correlation
     \item Reduced codebase size by \char`\~ 75\% while maintaining previous functionality, simplifying code for future maintenance / development
     \item Designed and implemented architecture of robot / software so any software-controlled instrument can be used during protocols (e.g. cameras, GPUs, thermocyclers)
-    \item Created tests, accurate to 1 µm over \char`\~ 1 meter, to measure the drift of the OT-2 using cross-correlation techniques
 \end{tightemize}
 
 \vspace{8pt}
