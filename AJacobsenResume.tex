@@ -18,12 +18,12 @@
 \begin{minipage}[t]{\textwidth}
   \runsubsection{Languages} Advanced in \custombold{Python}, experienced in \custombold{C}, \custombold{Java}, \custombold{Javascript}, learning \custombold{Julia}, \custombold{Lisp}, \custombold{Rust}. Experienced in \custombold{git}\\
   \ifdef{\software} {
-    \runsubsection{Deep Learning} Used LSTMs, CNNs, and various RL techniques (Asynchronous-Advantage Actor Critic, DQNs) in Pytorch
+    \runsubsection{Deep Learning} Trained various inference and RL algorithms (Asynchronous-Advantage Actor Critic, DQNs) in Pytorch
   } {
     \ifdef{\robotics} {
       \runsubsection{Electromechanical} Experience with robotics, PCB design, mechanical prototyping and Onshape/Solidworks
-    } { 
-      \runsubsection{Deep Learning} Used LSTMs, CNNs, and various RL techniques (Asynchronous-Advantage Actor Critic, DQNs) in Pytorch \\
+    } {
+      \runsubsection{Deep Learning} Trained various inference and RL algorithms (Asynchronous-Advantage Actor Critic, DQNs) in Pytorch
       \runsubsection{Electromechanical} Experience with robotics, PCB design, mechanical prototyping and Onshape/Solidworks
     }
   }
@@ -34,13 +34,26 @@
 \section{Relevant Experience}
 
 \runsubsection{Chan-Zuckerberg Biohub}
-\descript{| R\&D Engineering Intern | \small{Jun 2020 - Dec 2020, Jul 2021 - Present}}
+\descript{| Associate R\&D Engineer | \small{Mar 2022 - Present}}
+\begin{tightemize}
+    \item Deep Learning projects for an ultra-low cost instrument to diagnose malaria in the field
+      \begin{itemize}
+        \item Designing and training single-shot auto focus for the microscope, object detection for real time diagnosis
+      \end{itemize}
+    \item Writing protocols for automated cell-splitting, including designing an algorithm to speed up aliquots
+\end{tightemize}
+
+\runsubsection{Chan-Zuckerberg Biohub}
+\descript{| R\&D Engineering Intern | \small{Jun 2020 - Dec 2020, Jul 2021 - Dec 2021}}
 \begin{tightemize}
     \item Rewrote codebase of the \href{https://opentrons.com/ot-2/}{Opentrons OT-2}, an open-source pipetting robot
-    \item Doubled the speed of certain frequent operations (e.g. picking up / dropping pipette tips)
-    \item Created tests, accurate to 1 µm over \char`\~ 1 m, to measure drift of OT-2 using cross-correlation
-    \item Reduced codebase size by \char`\~ 75\% while maintaining previous functionality, simplifying code for future maintenance / development
-    \item Designed and implemented architecture of robot / software so any software-controlled instrument can be used during protocols (e.g. cameras, GPUs, thermocyclers)
+      \begin{itemize}
+        \item Designed tests to measure drift of OT-2, accurate to 1 µm over \char`\~ 1 m, using cross-correlation
+        \item Simplified software, reduced size by \char`\~ 60\% while maintaining previous functionality
+        \item Designed and implemented software architecture so any software-controlled instrument can be used during protocols (e.g.\ cameras,\ GPUs,\ thermocyclers)
+      \end{itemize}
+    \item Designed and ran tests to measure drift of OT-2, accurate to 1 µm over \char`\~ 1 m, using cross-correlation
+    \item Wrote ADC driver for ultra-low cost luminometer to detect COVID-19 antigens, deployed for trial in Bangladesh
 \end{tightemize}
 
 \vspace{8pt}
@@ -72,16 +85,15 @@
     \item Asynchronous Advantage Actor-Critic Model written in Pytorch, optimized for multicore CPUs via multiprocessing
     \item LSTM-based Deep Q-Network, trained on Denmark Technical University's High-Performance Computing Cluster
     \item Feed-forward neural network written from scratch, implementing the math behind deep learning
-    \item Currently writing a basic autograd library in Julia, in order to understand fundamentals of Pytorch
 \end{tightemize}
 
 \vspace{8pt}
 
 \runsubsection{Engineering Physics Autonomous Robot Competition}
 \begin{tightemize}
-    \item Designed and created an autonomous robot from scratch in 8 weeks, capable of navigating complex and dynamic course
+    \item Designed and created an autonomous robot from scratch in 8 weeks, capable of navigating a complex and dynamic course
     \item Implemented signal processing software to detect specific IR frequencies with sub-millisecond detection time
-    \item Designed and created circuits to control the mechanical subsystems (robotic arm / claw)
+    \ifundef{\software}{\item Designed and created circuits to control the mechanical subsystems (robotic arm / claw)}
     \item Wrote (in C) driver software for the robotic arm / claw, as well as software for high-level control loops of robot
 \end{tightemize}
 
@@ -91,18 +103,17 @@
 \section{Education}
 
 \runsubsection{University of British Columbia}
-\descript{| \small Expected May 2022}
+\descript{| B.ASc Engineering Physics, \small Graduated May 2022}
 \begin{adjustwidth}{0.55cm}{1.25cm}
-  \custombold{B.ASc Engineering Physics} \\
+   % \\
   \customit{Coursework includes} Lagrangian Mechanics, Computational Modelling, Digital Systems and Microcomputers, Signals and Systems, Applied Quantum Mechanics, Linear Algebra, Honours Multivariable and Vector Calculus, Complex Analysis, Optics, Statistical Mechanics
 \end{adjustwidth}
 
 \vspace{8pt}
 
 \runsubsection{Denmark Technical University}
-\descript{| \small Winter 2019 }
+\descript{| Exchange Semester, \small Winter 2019}
 \begin{adjustwidth}{0.55cm}{1.25cm}
-  \custombold{Exchange Semester} \\
   \customit{Coursework includes} Operating Systems, Deep Learning, Robotics, Computationally Hard Problems. \\
   Won DTU OS Course Competition for writing the fastest reverse hash server in C
 \end{adjustwidth}
