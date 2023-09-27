@@ -7,6 +7,8 @@
 % Modifications and my personal history:
 % Me
 
+% https://huyenchip.com/2023/01/24/what-we-look-for-in-a-candidate.html
+
 \documentclass[]{deedy-resume-openfont}
 \setlength{\parskip}{.4em}
 \thispagestyle{empty}
@@ -14,17 +16,6 @@
 \begin{document}
 
 \namesection{}{Axel Jacobsen}{\href{https://axel-jacobsen.github.io}{axel-jacobsen.github.io} | \href{mailto:axelnjacobsen@gmail.com}{axelnjacobsen@gmail.com}}
-
-\begin{minipage}[t]{\textwidth}
-  \runsubsection{Languages} Advanced in \custombold{Python} experienced in \custombold{C} \custombold{Javascript} learning \custombold{Julia} \custombold{Lisp} \custombold{Rust}\\
-  \ifdef{\software} {
-    \runsubsection{Deep Learning} Designing, training, and deploying neural networks on a low-cost instrument to diagnose malaria
-  } {
-    \ifdef{\robotics} {
-      \runsubsection{Electromechanical} Experience with robotics, PCB design, mechanical prototyping and Onshape/Solidworks
-    }{}
-  }
-\end{minipage}
 
 \vspace{12pt}
 
@@ -34,7 +25,9 @@
 \descript{| Associate R\&D Engineer | \small{Mar 2022 - Present}}
 \begin{tightemize}
 
-  % \item I am designing, training, and deploying neural networks on an new low-cost instrument to diagnose malaria. Specifically, a object detection network responsible for the diagnosis, and an "autofocus" network to keep the instrument's microscope in focus. Along with this, I contribute to software controlling the instrument.I am designing, training, and deploying neural networks on an new low-cost instrument to diagnose malaria. Specifically, a object detection network responsible for the diagnosis, and an "autofocus" network to keep the instrument's microscope in focus. Along with this, I contribute to software controlling the instrument.
+% I am designing, training, and deploying neural networks on an new low-cost instrument to diagnose malaria.
+% Specifically, a object detection network responsible for the diagnosis, and an "autofocus" network to keep the instrument's microscope in focus.
+% Along with this, I contribute to software controlling the instrument.
 
 \item Designing, training, and deploying a custom object detection network to diagnose malaria real-time on limited compute, as well as a simple convolutional network to determine focal drift
 \item Writing protocols for automated cell-splitting, including designing an algorithm to speed up aliquots
@@ -48,8 +41,7 @@
     \item Designed tests to measure drift of OT-2, accurate to 1 µm over \char`\~ 1 m, using cross-correlation
     \item Simplified software, reduced size by \char`\~ 60\% while maintaining previous functionality
   \end{itemize}
-\item Designed and ran tests to measure drift of OT-2, accurate to 1 µm over \char`\~ 1 m, using cross-correlation
-\item Wrote ann ADC driver for a low cost luminometer to detect COVID-19 antigens, deployed in Bangladesh
+\item Wrote an ADC driver for a low cost luminometer to detect COVID-19 antigens, deployed in Bangladesh
 \end{tightemize}
 
 \vspace{8pt}

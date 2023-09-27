@@ -1,0 +1,54 @@
+Relevant Experience
+-------------------
+
+Chan-Zuckerberg Biohub
+Associate R&D Engineer | Mar 2022 - Present
+
+- Designed, trained, and deployed a extreme high-precision object detection model to diagnose malaria, with a limit of detection of 0.00043% parasitemia. Light enough to run at 30 FPS on a busy Raspberry Pi 4.
+- Also
+
+Chan-Zuckerberg Biohub
+R&D Engineering Intern | Jun 2020 - Dec 2020, Jul 2021 - Dec 2021
+
+- Rewrote codebase of the Opentrons OT-2, an open-source pipetting robot
+  - Designed tests to measure drift of OT-2, accurate to 1 µm over \char`\~ 1 m, using cross-correlation
+  - Simplified software, reduced size by ~ 60% while maintaining previous functionality
+- Wrote an ADC driver for a low cost luminometer to detect COVID-19 antigens, deployed in Bangladesh
+
+Wildlife Computers
+Engineering Intern | May 2019 – Aug 2019
+
+- Designed an isolator PCB to isolate digital lines from sensitive measurement devices, allowing low-noise and accurate voltage measurements
+- Wrote C++ to test PCBs that arrive from fabrication - autonomously verifies PCB component placement to increase production throughput
+
+Control Mobile
+Data Science Co-op | Jan 2018 – Apr 2018
+- Wrote Python scripts to analyze and rank order over 300 individual SQL queries by their runtime to optimize the SQL database; reduced the runtime to fetch and display customer data by 65\%
+- Worked with the backend team to fix existing bugs, write new code, and refactor current code
+
+
+Projects
+--------
+
+Deep Learning
+- Asynchronous Advantage Actor-Critic Model written in Pytorch, optimized for multicore CPUs via multiprocessing
+- LSTM-based Deep Q-Network
+
+Engineering Physics Autonomous Robot Competition
+- Designed and created an autonomous robot from scratch in 8 weeks, capable of navigating a complex and dynamic course
+- Implemented signal processing software to detect specific IR frequencies with sub-millisecond detection time
+- Designed and created circuits to control the mechanical subsystems (robotic arm / claw)
+- Wrote (in C) driver software for the robotic arm / claw, as well as software for high-level control loops of robot
+
+
+Education
+---------
+
+University of British Columbia
+B.ASc Engineering Physics, Graduated May 2022
+- Coursework includes: Lagrangian Mechanics, Computational Modelling, Digital Systems and Microcomputers, Signals and Systems, Applied Quantum Mechanics, Linear Algebra, Honours Multivariable and Vector Calculus, Complex Analysis, Optics, Statistical Mechanics
+
+Denmark Technical University
+Exchange Semester,  Winter 2019
+- Coursework includes: Operating Systems, Deep Learning, Robotics, Computationally Hard Problems.
+- Won DTU OS Course Competition for writing the fastest reverse hash server
