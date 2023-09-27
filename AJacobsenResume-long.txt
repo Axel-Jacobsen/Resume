@@ -10,6 +10,8 @@ We are designing a novel low-cost imaging cytometer to diagnose malaria in the f
 - Also designed, trained, and deployed a model to predict the focus quality of a microscope image. This model has been deployed on our scopes for data collection in our labs and in Uganda. Well over 10 TB of data has been collected using this focus system.
 - I helped design the software architecture, and spent time optimizing performance on the microscope. Two notable instances:
   - I wrote a custom library that quicky communicated and moved data between processes using shared memory so we could perform some heavy calculations in a child process without moving data through python's native multiprocessing queues (which were much too slow). This sped up performance of certain vital calculations from a mean of 16.3 ms to 4.8 ms, and it was the major change that brought our performance into spec.
+    - The task that was optimized was calculating flow rate by cross-correlating sections of two sequential images in time
+    - This is required for each image (due to the noise in the calculation) so it had to be calculated once every 33 ms (when everything is running correctly). If this ran slow, though, all the other calculations would be slowed down, and we would miss the next image and performance would degrade significantly.
   - I rewrote the code that saves data to disk to be much more efficient, and to be able to save data comfortably at 30 FPS
 
 Chan-Zuckerberg Biohub

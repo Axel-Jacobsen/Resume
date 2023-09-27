@@ -2,53 +2,47 @@ Relevant Experience
 -------------------
 
 Chan-Zuckerberg Biohub
-Associate R&D Engineer | Mar 2022 - Present
+R&D Engineer | Mar 2022 - Present
+- Pioneered the YOGO (You Only Glance Once) diagnostic model, a high-precision deep learning tool diagnosing malaria, achieving detection precision below 0.00038% parasitemia; optimized for real-time operation on Raspberry Pi 4.
+- Architected the software foundation, improving microscope performance and efficiency.
+- Enhanced performance from 16.3 ms to 4.8 ms by developing a custom library for data communication between processes.
+- Optimized data saving protocols, enabling robust data saving at 30 FPS.
+- Created a machine learning model predicting microscope focus quality, instrumental in collecting over 10 TB of data in labs and Uganda.
 
-- Designed, trained, and deployed a extreme high-precision object detection model to diagnose malaria, with a limit of detection of 0.00043% parasitemia. Light enough to run at 30 FPS on a busy Raspberry Pi 4.
-- Also
-
-Chan-Zuckerberg Biohub
 R&D Engineering Intern | Jun 2020 - Dec 2020, Jul 2021 - Dec 2021
-
-- Rewrote codebase of the Opentrons OT-2, an open-source pipetting robot
-  - Designed tests to measure drift of OT-2, accurate to 1 µm over \char`\~ 1 m, using cross-correlation
-  - Simplified software, reduced size by ~ 60% while maintaining previous functionality
-- Wrote an ADC driver for a low cost luminometer to detect COVID-19 antigens, deployed in Bangladesh
+- Revamped Opentrons OT-2's codebase, trimming software bulk by ~60% without compromising functionalities.
+- Developed an ADC driver for a luminometer detecting COVID-19 antigens, adopted in Bangladesh.
 
 Wildlife Computers
 Engineering Intern | May 2019 – Aug 2019
-
-- Designed an isolator PCB to isolate digital lines from sensitive measurement devices, allowing low-noise and accurate voltage measurements
-- Wrote C++ to test PCBs that arrive from fabrication - autonomously verifies PCB component placement to increase production throughput
+- Devised an isolator PCB enhancing voltage measurement accuracy by isolating digital lines.
+- Authored C++ tests to automate and validate PCB component placement, boosting production throughput.
 
 Control Mobile
 Data Science Co-op | Jan 2018 – Apr 2018
-- Wrote Python scripts to analyze and rank order over 300 individual SQL queries by their runtime to optimize the SQL database; reduced the runtime to fetch and display customer data by 65\%
-- Worked with the backend team to fix existing bugs, write new code, and refactor current code
-
+- Optimized SQL database queries, resulting in a 65% reduction in data retrieval time.
+- Collaborated with the backend team in code enhancement, bug resolution, and refactoring tasks.
 
 Projects
 --------
 
 Deep Learning
-- Asynchronous Advantage Actor-Critic Model written in Pytorch, optimized for multicore CPUs via multiprocessing
-- LSTM-based Deep Q-Network
+- Developed an Asynchronous Advantage Actor-Critic Model in Pytorch; tailored for multicore CPU optimization.
+- Designed an LSTM-based Deep Q-Network.
 
 Engineering Physics Autonomous Robot Competition
-- Designed and created an autonomous robot from scratch in 8 weeks, capable of navigating a complex and dynamic course
-- Implemented signal processing software to detect specific IR frequencies with sub-millisecond detection time
-- Designed and created circuits to control the mechanical subsystems (robotic arm / claw)
-- Wrote (in C) driver software for the robotic arm / claw, as well as software for high-level control loops of robot
-
+- Engineered an autonomous robot in 8 weeks, proficient in navigating complex terrains.
+- Incorporated signal processing tools to swiftly detect specific IR frequencies.
+- Formulated robotic control circuits and driver software to maneuver robotic subsystems.
 
 Education
 ---------
 
 University of British Columbia
 B.ASc Engineering Physics, Graduated May 2022
-- Coursework includes: Lagrangian Mechanics, Computational Modelling, Digital Systems and Microcomputers, Signals and Systems, Applied Quantum Mechanics, Linear Algebra, Honours Multivariable and Vector Calculus, Complex Analysis, Optics, Statistical Mechanics
+- Acquired in-depth knowledge in areas like Quantum Mechanics, Digital Systems, Computational Modelling, Optics, and Statistical Mechanics.
 
 Denmark Technical University
 Exchange Semester,  Winter 2019
-- Coursework includes: Operating Systems, Deep Learning, Robotics, Computationally Hard Problems.
-- Won DTU OS Course Competition for writing the fastest reverse hash server
+- Studied Operating Systems, Deep Learning, Robotics, and Computationally Hard Problems.
+- Won in the DTU OS Course Competition with the fastest reverse hash server.
