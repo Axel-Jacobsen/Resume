@@ -1,10 +1,15 @@
+Axel Jacobsen
+axel-jacobsen.github.io
+github.com/axel-jacobsen
+axelnjacobsen@gmail.com
+
 Relevant Experience
 -------------------
 
 Chan-Zuckerberg Biohub
 R&D Engineer | Mar 2022 - Present
 
-Involved in the creation of a revolutionary low-cost imaging cytometer for malaria detection. This device uses machine learning to diagnose malaria by imaging unstained blood samples
+We are creating a low-cost imaging cytometer for malaria detection. This device uses machine learning to diagnose malaria by imaging unstained blood and classifying blood cells with an object detection model
 
 - Created a state-of-the-art diagnostic deep learning model for malaria detection. Achieved a detection limit below 0.00038% parasitemia, roughly 1 false positive in every 260,000 predictions. Optimized to run seamlessly at 30 FPS on Raspberry Pi 4. Currently drafting the associated research paper
 - Architected and optimized software for the microscope. Key contributions include:
