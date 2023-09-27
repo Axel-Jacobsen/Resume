@@ -10,12 +10,12 @@ Involved in the creation of a revolutionary low-cost imaging cytometer for malar
 - Architected and optimized software for the microscope. Key contributions include:
   - Created a multiprocessing manager to efficiently move data between processes for heavy calculations, reducing execution times from 16.3 ms to 4.8 ms
   - Enhanced data-saving speed, enabling stable operations at 30 FPS
-- created a deep learning model to gauge the focus quality of microscope images, aiding in the collection of over 10 TB of data from labs globally
+- created a deep learning model to gauge the focus quality of microscope images, aiding in the collection of over 10 TB of data from our deployment to Uganda
 
 Chan-Zuckerberg Biohub
 R&D Engineering Intern | Jun 2020 - Dec 2020, Jul 2021 - Dec 2021
 
-- Overhauled the codebase of the Opentrons OT-2 pipetting robot, reducing its size by ~60% without sacrificing functionality
+- Overhauled the codebase of the Opentrons OT-2 pipetting robot, greatly simplifying its API and reducing its size by ~60% without sacrificing functionality
 - Authored an ADC driver for a luminometer detecting COVID-19 antigens, currently deployed in Bangladesh. [Link to research](https://www.medrxiv.org/content/10.1101/2023.05.18.23290120v1)
 
 Wildlife Computers
@@ -36,6 +36,7 @@ Projects
 Deep Learning
 - Crafted an Asynchronous Advantage Actor-Critic Model using Pytorch, enhanced for multicore CPU operation
 - Developed an LSTM-based Deep Q-Network
+- Much surfboard repair
 
 Engineering Physics Autonomous Robot Competition
 - Engineered an autonomous robot in 8 weeks capable of navigating a maze and detecting IR frequencies
