@@ -7,8 +7,10 @@ R&D Engineer | Mar 2022 - Present
 We are designing a novel low-cost imaging cytometer to diagnose malaria in the field. In short, it flows unstained blood past a camera and uses machine learning to detect malaria parasites. Primarily, I work on the deep learning models on the project, primarily the diagnostic model that I created called "YOGO" (You Only Glance Once). I also focused on optimizing performance of the main control software on the microscope, and the software architecture for the project.
 
 - Designed, trained, and deployed a extreme high-precision object detection model designed for diagnosing malaria from blood, with a limit of detection below 0.00038% parasitemia (~190 parasites / µL, or 1 false positive every 260,000 predictions). Designed to be light enough to run at 30 FPS on a busy Raspberry Pi 4. I led this project, designed the network from the YOLO family of object detectors, wrote all the code required for training, inference, labelling, and deployment. I am currently writing the paper for this project.
-- Also designed, trained, and deployed a model to predict the focus quality of a microscope image. This model has been deployed on our scopes for data collection in our labs and in Uganda. Over 10 TB of data has been collected using this focus system.
-- I helped design the software architecture, and spent time optimizing performance on the microscope.
+- Also designed, trained, and deployed a model to predict the focus quality of a microscope image. This model has been deployed on our scopes for data collection in our labs and in Uganda. Well over 10 TB of data has been collected using this focus system.
+- I helped design the software architecture, and spent time optimizing performance on the microscope. Two notable instances:
+  - I wrote a custom library that quicky communicated and moved data between processes using shared memory so we could perform some heavy calculations in a child process without moving data through python's native multiprocessing queues (which were much too slow). This sped up performance of certain vital calculations from a mean of 16.3 ms to 4.8 ms, and it was the major change that brought our performance into spec.
+  - I rewrote the code that saves data to disk to be much more efficient, and to be able to save data comfortably at 30 FPS
 
 Chan-Zuckerberg Biohub
 R&D Engineering Intern | Jun 2020 - Dec 2020, Jul 2021 - Dec 2021
@@ -16,7 +18,7 @@ R&D Engineering Intern | Jun 2020 - Dec 2020, Jul 2021 - Dec 2021
 - Rewrote codebase of the Opentrons OT-2, an open-source pipetting robot
   - Designed tests to measure drift of OT-2, accurate to 1 µm over \char`\~ 1 m, using cross-correlation
   - Simplified software, reduced size by ~ 60% while maintaining previous functionality
-- Wrote an ADC driver for a low cost luminometer to detect COVID-19 antigens, deployed in Bangladesh
+- Wrote an ADC driver for a low cost luminometer to detect COVID-19 antigens, deployed in Bangladesh (https://www.medrxiv.org/content/10.1101/2023.05.18.23290120v1)
 
 Wildlife Computers
 Engineering Intern | May 2019 – Aug 2019
