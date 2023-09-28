@@ -5,7 +5,7 @@ body {
     font-family: "Inconsolata", sans-serif;
     line-height: 1.5;
     color: #333;
-    background-color: #F2F3F7;
+    background-color: rgb(240, 240, 240);
     margin: 0;
     padding: 0;
     overflow-y: auto;
@@ -13,14 +13,14 @@ body {
 
 a {
     font-family: "Inconsolata", sans-serif;
-    color: #4A90E2;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     margin-right: 12px;
     transition: color 0.2s ease-in-out;
 }
 
 a:hover {
-    color: #356BB5;
+    color: #555;
 }
 
 .name {
@@ -68,13 +68,12 @@ a:hover {
 
 h2, h3 {
     color: #34495E;
-    border-bottom: 2px solid #4A90E2;
+    border-bottom: 2px solid #50576b;
     padding-bottom: 10px;
 }
 
 .program {
     font-size: 18px;
-    color: #8E44AD;
     margin: 5px 0 10px 0;
 }
 
