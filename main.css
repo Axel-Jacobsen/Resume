@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono|Major+Mono+Display|Inconsolata");
 
 body {
-    font-size: 15px;
+    font-size: 17px;
     font-family: "Inconsolata", sans-serif;
     line-height: 1.5;
     color: #333;
@@ -68,6 +68,7 @@ h2, h3 {
     color: #34495E;
     border-bottom: 2px solid #50576b;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .no-bottom-border {
@@ -80,6 +81,13 @@ h2, h3 {
     margin: 5px 0 10px 0;
 }
 
+/* I think asterisks fit my website's styles better */
 ul {
     padding-left: 20px;
+    list-style-type: none;
+}
+
+ul li::before {
+  content: "* ";
+  color: #111;
 }
