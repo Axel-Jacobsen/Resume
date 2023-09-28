@@ -1,3 +1,3 @@
 # Resume
 
-Go to the website here! axel-jacobsen.github.io/Resume/
+Go to the website here! https://axel-jacobsen.github.io/Resume/
