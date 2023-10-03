@@ -91,4 +91,5 @@ ul {
 ul li::before {
   content: "* ";
   color: #111;
+  font-weight: bold;
 }
