@@ -80,6 +80,7 @@ h2, h3 {
 .program {
     font-size: 18px;
     margin: 5px 0 10px 0;
+    font-weight: bold;
 }
 
 /* I think asterisks fit my website's styles better */
