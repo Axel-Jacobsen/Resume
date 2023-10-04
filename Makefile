@@ -1,14 +1,8 @@
 .PHONY: software
 software:
-	@lualatex "\def\software{} \input{AJacobsenResume.tex}"
-
-.PHONY: build
-build:
-	@lualatex "\def\general{} \input{AJacobsenResume.tex}"
-
-.PHONY: robotics
-robotics:
-	@lualatex "\def\robotics{} \input{AJacobsenResume.tex}"
+	@lualatex AJacobsenResume.tex
+	@lualatex AJacobsenResume.tex
+	@make clean
 
 .PHONY: clean
 clean:
