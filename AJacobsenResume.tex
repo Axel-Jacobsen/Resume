@@ -1,90 +1,98 @@
-\documentclass[letterpaper,10pt]{article}
-\usepackage[margin=1in]{geometry}
-\usepackage{enumitem}
+\documentclass[a4paper, 10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
 \usepackage{hyperref}
+\usepackage{enumitem}
 \usepackage{titlesec}
+\usepackage{tabularx}
 
-% Define custom section style
-\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
-\titleformat{\subsection}[runin]{\bfseries}{}{0em}{}[:]
-
-% No page numbers
-\pagestyle{empty}
+% Formatting
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}[runin]{\bfseries}{\thesubsubsection}{1em}{}[:]
 
 \begin{document}
 
-\noindent
-{\Large\bf Axel Jacobsen} \\
-\href{https://axel-jacobsen.github.io}{axel-jacobsen.github.io} \\
-\href{https://github.com/axel-jacobsen}{github.com/axel-jacobsen} \\
-\href{mailto:axelnjacobsen@gmail.com}{axelnjacobsen@gmail.com}
+\newcommand{\educationentry}[3]{
+    \begin{tabularx}{\linewidth}{X r}
+        \textbf{#1} & \textbf{#2} \\
+        #3 & \\
+    \end{tabularx}
+}
 
-\section*{Relevant Experience}
+\centering
+\textbf{\Large Axel Jacobsen} \\
+\href{https://axel-jacobsen.github.io}{axel-jacobsen.github.io} \quad
+\href{https://github.com/axel-jacobsen}{github.com/axel-jacobsen} \quad
+\href{mailto:axelnjacobsen@gmail.com}{axelnjacobsen@gmail.com} \\
+\hrule
 
-\noindent
-{\bf Chan-Zuckerberg Biohub} \\
-\textit{R\&D Engineer | Mar 2022 \- Present} \\
-We are creating a low-cost imaging cytometer for malaria detection. This device uses machine learning to diagnose malaria by imaging unstained blood and classifying blood cells with an object detection model
+\flushleft
+
+\section*{Experience}
+
+\subsection*{Chan-Zuckerberg Biohub}
+\subsubsection*{R\&D Engineer}
+Mar 2022 - Present
 \begin{itemize}
-    \item Created a state-of-the-art diagnostic deep learning model for malaria detection. Achieved a detection limit below 0.00038\% parasitemia, roughly 1 false positive in every 260,000 predictions. Optimized to run seamlessly at 30 FPS on Raspberry Pi 4. Currently drafting the associated research paper
+    \item We are creating a low-cost imaging cytometer for malaria detection. This device uses machine learning to diagnose malaria by imaging unstained blood and classifying blood cells with an object detection model.
+    \item Created a deep learning model for malaria detection. Achieved a detection limit of 0.00038\% parasitemia, roughly 1 false positive in every 260,000 predictions. Optimized to run at 120 FPS on Raspberry Pi 4 + Intel NCS2, and 550+ FPS on an A100 GPU. Currently drafting the associated research paper.
+    \item Created a deep learning model to gauge the focus quality of microscope images, aiding in the collection of over 10 TB of data from our deployment to Uganda.
     \item Architected and optimized software for the microscope. Key contributions include:
     \begin{itemize}
-        \item Created a multiprocessing manager to efficiently move data between processes for heavy calculations, reducing execution times from 16.3 ms to 4.8 ms
-        \item Enhanced data-saving speed, enabling stable operations at 30 FPS
+        \item Created a multiprocessing manager to efficiently move data between processes for heavy calculations, reducing execution times from 16.3 ms to 4.8 ms.
+        \item Increased data-saving speed, enabling stable operations above 30 FPS.
     \end{itemize}
-    \item Created a deep learning model to gauge the focus quality of microscope images, aiding in the collection of over 10 TB of data from our deployment to Uganda
 \end{itemize}
 
-\noindent
-{\bf Chan-Zuckerberg Biohub} \\
-\textit{R\&D Engineering Intern | Jun 2020 \- Dec 2020, Jul 2021 \- Dec 2021}
+\subsubsection*{R\&D Engineering Intern}
+Jun 2020 - Dec 2020, Jul 2021 - Dec 2021
 \begin{itemize}
-    \item Overhauled the codebase of the Opentrons OT-2 pipetting robot, greatly simplifying its API and reducing its size by $\sim$60\% without sacrificing functionality
-    \item Authored an ADC driver for a luminometer detecting COVID-19 antigens, currently deployed in Bangladesh. \href{https://www.medrxiv.org/content/10.1101/2023.05.18.23290120v1}{Link to research}
+    \item Overhauled the codebase of the Opentrons OT-2 pipetting robot, greatly simplifying its API and reducing its size by ~60\% without sacrificing functionality.
+    \item Wrote an ADC driver for a luminometer to detect COVID-19 antigens, currently deployed in Bangladesh. \href{https://www.medrxiv.org/content/10.1101/2023.05.18.23290120v1}{Link to research}.
 \end{itemize}
 
-\noindent
-{\bf Wildlife Computers} \\
-\textit{Engineering Intern | May 2019 – Aug 2019}
+\subsection*{Wildlife Computers}
+\subsubsection*{Engineering Intern}
+May 2019 – Aug 2019
 \begin{itemize}
-    \item Engineered a PCB to protect digital lines from interference, ensuring precision voltage measurements
-    \item Developed C++ software for automated PCB component verification, boosting production efficiency
+    \item Engineered a PCB to protect digital lines from interference, ensuring precision voltage measurements.
+    \item Developed C++ software for automated PCB component verification, boosting production efficiency.
 \end{itemize}
 
-\noindent
-{\bf Control Mobile} \\
-\textit{Data Science Co-op | Jan 2018 – Apr 2018}
+\subsection*{Control Mobile}
+\subsubsection*{Data Science Co-op}
+Jan 2018 – Apr 2018
 \begin{itemize}
-    \item Optimized SQL database operations by evaluating and improving 300+ SQL queries, achieving a 65\% reduction in data retrieval time
-    \item Collaborated with the backend team on bug fixes, code development, and refactoring
+    \item Optimized SQL database operations by evaluating and improving 300+ SQL queries, achieving a 65\% reduction in data retrieval time.
+    \item Worked on bug fixes, code development, and refactoring.
 \end{itemize}
 
-\section*{Projects}
+\section*{Other}
 
-\noindent
-{\bf Deep Learning}
+\subsection*{Engineering Physics Autonomous Robot Competition}
 \begin{itemize}
-    \item Crafted an Asynchronous Advantage Actor-Critic Model using Pytorch, enhanced for multicore CPU operation
-    \item Developed an LSTM-based Deep Q-Network
-    \item Much surfboard repair
-\end{itemize}
-
-\noindent
-{\bf Engineering Physics Autonomous Robot Competition}
-\begin{itemize}
-    \item Engineered an autonomous robot in 8 weeks capable of navigating a maze and detecting IR frequencies
-    \item Wrote signal processing software for rapid IR frequency detection and managed the creation of robot subsystem circuits
-    \item Formulated robotic control circuits and driver software to maneuver robotic subsystems
+    \item Engineered an \href{https://axel-jacobsen.github.io/ENPHRobot/}{autonomous robot} over 8 weeks, capable of navigating an obstacle course and collecting objects.
+    \item Wrote signal processing software for rapid IR frequency detection and control software for the subsystems of the robot (e.g. the claw).
 \end{itemize}
 
 \section*{Education}
 
-\noindent
-{\bf University of British Columbia} \\
-\textit{B.ASc Engineering Physics | Graduated May 2022} \\
-\ \\
-{\bf Denmark Technical University} \\
-\textit{Exchange Semester | Winter 2019} \\
-Won the DTU OS Course Competition with the creation of the fastest reverse hash server
+
+\educationentry{University of British Columbia}{Graduated May 2022}{B.ASc Engineering Physics}
+\educationentry{Denmark Technical University}{Winter 2019}{Exchange Semester. Won DTU OS Course Competition with the fastest reverse hash server.}
+
+
+% \subsection*{University of British Columbia}
+% \subsubsection*{B.ASc Engineering Physics}
+% Graduated May 2022
+
+% \subsection*{Denmark Technical University}
+% \subsubsection*{Exchange Semester}
+% Winter 2019
+% \begin{itemize}
+%     \item Won the DTU OS Course Competition with the creation of the fastest reverse hash server
+%     \item Developed an LSTM-based Deep Q-Network for my machine learning course
+% \end{itemize}
 
 \end{document}
