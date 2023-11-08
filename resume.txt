@@ -1,0 +1,60 @@
+Axel Jacobsen
+-------------
+
+PDF of this resume: AJacobsenResume.pdf
+Portfolio: axel-jacobsen.github.io
+Email: axelnjacobsen@gmail.com
+GitHub: github.com/axel-jacobsen
+
+
+Experience
+----------
+
+Chan-Zuckerberg Biohub
+Associate R&D Engineer | Mar 2022 - Present
+
+- Creating a low-cost imaging cytometer for malaria diagnosis, utilizing an object detection model (YOGO).
+- Developed YOGO, a deep learning model with a detection limit of 0.00038% parasitemia, reaching ~6600 FPS on an A100 GPU for images of size (772, 1032) px.
+- Deployed a deep learning model for image focus prediction, aiding in collecting over 10 TB of data from Uganda.
+- Optimized microscope software, including creating a multiprocessing manager to move data between processes, reducing execution times from 16.3 ms to 4.8 ms.
+
+R&D Engineering Intern | Jun 2020 - Dec 2020, Jul 2021 - Dec 2021
+
+- Overhauled the Opentrons OT-2 pipetting robot's codebase, reducing its size by approximately 60%.
+- Authored an ADC driver for a luminometer detecting COVID-19 antigens, currently in use in Bangladesh.
+- https://www.medrxiv.org/content/10.1101/2023.05.18.23290120v1
+
+Wildlife Computers
+Engineering Intern | May 2019 – Aug 2019
+
+- Designed a PCB for digital line interference protection.
+- Developed C++ software for automated detection of faulty PCBs, increasing production efficiency.
+
+Control Mobile
+Data Science Co-op | Jan 2018 – Apr 2018
+
+- Optimized over 300 SQL queries, cutting down data retrieval time by 65%.
+- Conducted bug fixes, code development, and refactoring tasks.
+
+
+Other
+-----
+
+Engineering Physics Autonomous Robot Competition
+
+- Built an autonomous robot capable of navigating an obstacle course and object collection over 8 weeks.
+- Composed signal processing software for IR frequency detection and subsystem control software (e.g., the robot's claw).
+- https://axel-jacobsen.github.io/ENPHRobot/
+
+
+Education
+---------
+
+University of British Columbia
+B.ASc Engineering Physics | Graduated May 2022
+
+Denmark Technical University
+Exchange Semester | Winter 2019
+
+- Won the DTU OS Course Competition by creating the fastest reverse hash server.
+- Developed an LSTM-based Deep Q-Network for a machine learning course.
