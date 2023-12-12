@@ -14,7 +14,7 @@ Chan-Zuckerberg Biohub
 Associate R&D Engineer | Mar 2022 - Present
 
 - Creating a low-cost imaging cytometer for malaria diagnosis, utilizing an object detection model (YOGO).
-- Developed YOGO, a deep learning model with a detection limit of 0.00038% parasitemia, reaching ~6600 FPS on an A100 GPU for images of size (772, 1032) px.
+- Developed YOGO, a deep learning model with a detection limit of 0.00038% parasitemia, reaching ~1680 FPS on an A100 GPU for images of size (772, 1032) px.
 - Deployed a deep learning model for image focus prediction, aiding in collecting over 10 TB of data from Uganda.
 - Optimized microscope software, including creating a multiprocessing manager to move data between processes, reducing execution times from 16.3 ms to 4.8 ms.
 
