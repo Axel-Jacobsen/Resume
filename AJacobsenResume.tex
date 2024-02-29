@@ -5,7 +5,7 @@
 \moderncvstyle{classic}
 
 \usepackage{xcolor}
-\usepackage[scale=0.85, top=2cm, bottom=1cm]{geometry}
+\usepackage[scale=0.85, top=1cm, bottom=1cm]{geometry}
 
 \definecolor{color0}{gray}{0}
 \definecolor{color1}{gray}{0.2}
@@ -36,8 +36,9 @@
   \textit{We are creating a low-cost imaging cytometer for malaria diagnosis, which images fresh blood and finds malaria parasites with my object detection model (YOGO, manuscript in-progress)}
 \begin{itemize}
     \setlength\itemsep{\listspacing}
-    \item Designed and developed YOGO, a deep learning model with a limit of detection of 0.00038\% parasitemia. Reached 1680 FPS on an A100 GPU for (772, 1032) px images
+    \item Designed and developed YOGO, an object detection model with a limit of detection of 0.00038\% parasitemia. Reached 1680 FPS on an A100 GPU for (772, 1032) px images
     \item Worked on a deep learning model to predict image focus to keep the device in-focus. Successfully deployed to collect over 10 TB of data from Uganda
+    \item Organized, pre-processed, and analyzed the 10 TB of clinical data. This included writing many tools (Python + Bash) to manage and analyze the data which our team uses daily
     \item Architected and optimized software for the microscope. Key contributions included creating a multiprocessing manager to efficiently move data between processes for heavy calculations, reducing execution times from 16.3 ms to 4.8 ms
 \end{itemize}
 }
@@ -46,7 +47,7 @@
 \cventry{Jun 2020 --- Dec 2021}{R\&D Engineering Intern}{Chan-Zuckerberg Biohub}{}{}{%
 \begin{itemize}
     \setlength\itemsep{\listspacing}
-    \item Overhauled the Opentrons OT-2 pipetting robot's codebase, reducing its size by \~60\%
+    \item Rewrote the entire codebase for the Opentrons OT2 (an open-source liquid handling robot) in 6 months to allow more complex protocols and to simplify the software
     \item Developed an ADC driver for a luminometer detecting COVID-19 antigens, deployed in Bangladesh. \href{https://www.medrxiv.org/content/10.1101/2023.05.18.23290120v1}{https://doi.org/10.1101/2023.05.18.23290120}.
 \end{itemize}
 }
@@ -56,7 +57,7 @@
 \begin{itemize}
     \setlength\itemsep{\listspacing}
     \item Designed a PCB to protect digital lines from interference
-    \item Developed C++ software for automatic PCB component verification
+    \item Wrote embedded C++ for automatic PCB component verification
 \end{itemize}
 }
 \vspace{\sectionspacing}
@@ -64,7 +65,7 @@
 \cventry{Jan 2018 --- Apr 2018}{Data Science Co-op}{Control Mobile}{}{}{%
 \begin{itemize}
     \setlength\itemsep{\listspacing}
-    \item Evaluated and improved 300+ SQL queries, achieving a 65\% reduction in data retrieval time
+    \item Improved 300+ SQL queries, achieving a mean 65\% reduction in data retrieval time
     \item Worked on bug fixes, code development, and refactoring
 \end{itemize}
 }
@@ -76,9 +77,17 @@
 \begin{itemize}
     \setlength\itemsep{\listspacing}
     \item Engineered an \href{https://axel-jacobsen.github.io/ENPHRobot/}{autonomous robot} over 8 weeks, capable of navigating an obstacle course and collecting objects. \href{https://axel-jacobsen.github.io/ENPHRobot/}{https://axel-jacobsen.github.io/ENPHRobot/}
-    \item Developed software for IR frequency detection and robot subsystem control
+    \item Wrote control software for subsystems and Goertzel filter for frequency detection
 \end{itemize}
 }
+
+\cventry{}{Small Fun Projects}{}{}{}{%
+\begin{itemize}
+    \setlength\itemsep{\listspacing}
+    \item \href{https://github.com/axel-jacobsen/chuffman}{Huffman compressor in C}, \href{https://github.com/Axel-Jacobsen/mmm}{trading bot in Rust} for \href{https://manifold.markets}{Manifold Markets}, \href{https://github.com/Axel-Jacobsen/roulette}{FIXME-roulette in Rust}
+\end{itemize}
+}
+
 \vspace{\sectionspacing}
 
 \section{Education}

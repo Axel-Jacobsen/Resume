@@ -31,15 +31,16 @@
         <p class="program">R&D Engineer | Mar 2022 - Present</p>
         <i>We are creating a low-cost imaging cytometer for malaria diagnosis, which images fresh blood and finds malaria parasites with my object detection model (YOGO, manuscript in-progress)</i>
         <ul>
-          <li>Designed and developed YOGO, a deep learning model with a limit of detection of 0.00038% parasitemia. Reached 1680 FPS on an A100 GPU for (772, 1032) px images</li>
+          <li>Designed and developed YOGO, an object detection model with a limit of detection of 0.00038% parasitemia. Reached 1680 FPS on an A100 GPU for (772, 1032) px images</li>
           <li>Worked on a deep learning model to predict image focus to keep the device in-focus. Successfully deployed to collect over 10 TB of data from Uganda</li>
-          <li>Architected and optimized software for the microscope. Key contributions included creating a multiprocessing manager to efficiently move data between processes for heavy calculations, reducing execution times from 16.3 ms to 4.8 ms</li>
+          <li>Organized, pre-processed, and analyzed the 10 TB of clinical data. This included writing many tools (Python + Bash) to manage and analyze the data which our team uses daily</li>
+          <li>Architected and optimized software for the microscope. Key contributions included creating a multiprocessing manager to efficiently move data between processes for heavy calculations, reducing mean execution times from 16.3 ms to 4.8 ms</li>
         </ul>
 
         <hr class="no-bottom-border">
         <p class="program">R&D Engineering Intern | Jun 2020 - Dec 2020, Jul 2021 - Dec 2021</p>
         <ul>
-          <li>Overhauled the Opentrons OT-2 pipetting robot's codebase, reducing its size by ~60%</li>
+          <li>Rewrote the entire codebase for the Opentrons OT2 (an open-source liquid handling robot) in 6 months to allow more complex protocols and to simplify the software</li>
           <li>Wrote an ADC driver for a luminometer to detect COVID-19 antigens, currently deployed in Bangladesh. <a href="https://www.medrxiv.org/content/10.1101/2023.05.18.23290120v1">Link to research</a></li>
         </ul>
 
@@ -47,13 +48,13 @@
         <p class="program">Engineering Intern | May 2019 – Aug 2019</p>
         <ul>
           <li>Designed a PCB to protect digital lines from interference</li>
-          <li>Developed C++ software for automated faulty PCB detection, boosting production efficiency</li>
+          <li>Wrote embedded C++ for automatic PCB component verification</li>
         </ul>
 
         <h3>Control Mobile</h3>
         <p class="program">Data Science Co-op | Jan 2018 – Apr 2018</p>
         <ul>
-          <li>Evaluated and improved 300+ SQL queries, achieving a 65% reduction in data retrieval time</li>
+          <li>Improved 300+ SQL queries, achieving a mean 65% reduction in data retrieval time</li>
           <li>Worked on bug fixes, code development, and refactoring</li>
         </ul>
 
@@ -62,7 +63,14 @@
         <h3 class="no-bottom-border">Engineering Physics Autonomous Robot Competition</h3>
         <ul>
           <li>Engineered an <a href="https://axel-jacobsen.github.io/ENPHRobot/">autonomous robot</a>over 8 weeks, capable of navigating an obstacle course and collecting objects</li>
-          <li>Wrote signal processing software for rapid IR frequency detection and control software for the subsytems of the robot (e.g. the claw)</li>
+          <li>Wrote control software for subsystems and Goertzel filter for frequency detection</li>
+        </ul>
+
+        <h3 class="no-bottom-border">Small Fun Projects</h3>
+        <ul>
+          <li><a href="https://github.com/axel-jacobsen/chuffman">Huffman compressor in C</a>
+            <li><a href="https://github.com/Axel-Jacobsen/mmm">trading bot</a>and <a href="https://github.com/Axel-Jacobsen/mmmbacktest">a backtest server</a>for <a href="https://manifold.markets">Manifold Markets</a>in Rust
+          <li><a href="https://github.com/Axel-Jacobsen/roulette">FIXME-roulette in Rust</a>
         </ul>
 
         <h2>Education</h2>
@@ -72,8 +80,10 @@
 
         <h3 class="no-bottom-border">Denmark Technical University</h3>
         <p class="program">Exchange Semester | Winter 2019</p>
-        <p>Won the DTU OS Course Competition with the creation of the fastest reverse hash server</p>
-        <p>Developed an LSTM-based Deep Q-Network for my machine learning course</p>
+        <ul>
+          <li>Won the DTU OS Course Competition with the creation of the fastest reverse hash server</li>
+          <li>Developed an LSTM-based Deep Q-Network for my machine learning course</li>
+        </ul>
       </section>
     </div>
 
